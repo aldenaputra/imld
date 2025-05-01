@@ -78,7 +78,7 @@ export default function Poem() {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
-  className="p-6 max-w-2xl w-full"
+  className="px-15 sm:px-6 md:px-12 w-full max-w-3xl"
 >
   {poemLines.map((line, index) => {
     if (line.trim() === "") {
@@ -97,7 +97,7 @@ export default function Poem() {
             delay: index * (delayPerLine / 1000),
             duration: duration / 1000,
           }}
-          className="text-left text-[1.25rem] italic text-gray-900 font-serif leading-tight"
+          className="text-left text-sm sm:text-lg md:text-xl italic text-gray-900 font-serif leading-snug"
           style={{ fontFamily: "Times New Roman, serif" }}
         >
           {parts[0]}
@@ -126,7 +126,7 @@ export default function Poem() {
           delay: index * (delayPerLine / 1000),
           duration: duration / 1000,
         }}
-        className="text-left text-[1.25rem] italic text-gray-900 font-serif leading-tight"
+        className="text-left text-sm sm:text-lg md:text-xl italic text-gray-900 font-serif leading-snug"
         style={{ fontFamily: "Times New Roman, serif" }}
       >
         {line}
