@@ -25,7 +25,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 1, duration: 1 }}
-            className="text-left text-base sm:text-lg md:text-xl italic text-gray-900 font-serif leading-snug"
+            className="text-left text-sm sm:text-lg md:text-xl italic text-gray-900 font-serif leading-snug"
             style={{ fontFamily: 'Times New Roman, serif' }}
           >
             {line}
