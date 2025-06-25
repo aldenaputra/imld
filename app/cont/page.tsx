@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 const continuationPoem = [
-  "rain in my window;",
+  "rain on my window;",
   "—how could i have known?"
 ];
 
