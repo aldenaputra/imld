@@ -3,10 +3,8 @@
 import { motion } from 'framer-motion';
 
 const continuationPoem = [
-  "sendirian kita hidup",
-  "—pun berdampingan.",
-  "berdampingan dengan diri kita",
-  "di masa lalu.",
+  "rain in my window;",
+  "—how could i have known?"
 ];
 
 export default function Page() {

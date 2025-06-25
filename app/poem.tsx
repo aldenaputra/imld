@@ -5,25 +5,10 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 
 const poemLines = [
-  "sendirian kita hidup—pun berdampingan.",
-  "",
-  "karena saat sendirian,",
-  "kesalahan hari kemarin, dirasa begitu bodoh.",
-  "",
-  "karena saat sepi,",
-  "engkau dan dirimu kian bersaut cerita.",
-  "",
-  "disaat sendiri hadir,",
-  "sebuah panggung untuk suara-suaramu yang tidak terucap.",
-  "",
-  "sebuah pemikir untuk setiap keluh yang disimpan dan kesah yang diredam.",
-  "",
-  "sebuah hati untuk menjawab yang belum dimengerti baik salah atau benarnya.",
-  "",
-  "sebuah teman yang selalu kita benci akan semua tuturnya tentang dirimu yang selalu benar.",
-  "",
-  "engkau dan dirimu.",
-  "sendiri memanggilmu.",
+  "rain on my window,",
+  "echoes of things i'll never show.",
+  "each drop, a fading reminiscence,",
+  "and wonder if time forgives in silence;",
 ];
 
 export default function Poem() {
@@ -85,8 +70,8 @@ export default function Poem() {
       return <div key={index} className="h-6" />;
     }
 
-    if (line.includes("memanggilmu.")) {
-      const parts = line.split("memanggilmu.");
+    if (line.includes("silence;")) {
+      const parts = line.split("silence;");
 
       return (
         <motion.p
@@ -110,7 +95,7 @@ export default function Poem() {
               }}              
             className="text-black cursor-pointer transition-colors duration-300 hover:text-blue-400"
           >
-            'memanggilmu;'
+            silence;
           </span>
           {parts[1]}
         </motion.p>
